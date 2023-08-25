@@ -68,19 +68,19 @@
     align-items: center;
   }
   
-  @media screen and (max-width: 886px) {
+  @media screen and (max-width: 1190px) {
     .nav_logo {
-      width: 65%;
+      width: 80%;
     }
   
     .nav_menu {
       position: fixed;
       top: 0;
       right: -100%;
-      width: 70%;
+      width: 30%;
       height: 100%;
       padding: 3.5rem 1.5rem 0;
-      background: #28292b;
+      background: #180c20;
       transition: 0.5s;
     }
   }
@@ -92,12 +92,13 @@
   }
   
   .nav_item {
-    margin-bottom: 2rem;
+    margin-bottom: 2rem;    
   }
   
   .nav_close, .nav_link, .nav_logo, .nav_toggle {
     color: #a4a5a6;
     transition: 0.2s;
+    margin-top: 160px;
   }
   
   .nav_link:hover {
@@ -229,6 +230,7 @@
   @media screen and (max-width: 886px) {
     .nav_logo {
       margin-left: 1.875rem;
+      margin-top: 200px;
     }
   
     .home_img {
@@ -297,8 +299,8 @@
   
     .nav_list {
       display: flex;
-      position: relative;
-      right: 270px;
+      position: absolute;
+      right: 70px;
     }
   
     .nav_item {
@@ -326,7 +328,7 @@
     }
   }
   
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 100px) {
     .grid {
       margin: 0 auto 0 auto;
     }
