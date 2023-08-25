@@ -1,0 +1,94 @@
+<!DOCTYPE html> <!-- Define o tipo de documento como HTML5 -->
+<html lang="pt"> <!-- Define o idioma da página como português -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Petistco</title>
+
+  <!--============ CSS ============-->
+
+  <link rel="stylesheet" href="./assets/css/style.css" /> <!-- Link para um arquivo CSS externo -->
+
+  <!--=========== Favicon ===============-->
+  <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+      id="favicon_tag"
+    /> <!-- Define o ícone da página -->
+
+  <!--============ GOOGLE FONTS ============-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!--============ CABEÇALHO ============-->
+  <style>
+    .header {
+      background: linear-gradient(to right, #f78e0e 35%, #180c20 35%); /* Estilização do cabeçalho com gradiente linear */
+    }
+  </style>
+
+  <header class="header"> <!-- Início do cabeçalho -->
+    <nav class="nav grid"> <!-- Início da barra de navegação -->
+      <div>
+        <a href="/"> 
+          <img src="./assets/img/logo.png" alt="Petisco" class="nav_logo" width="205" /> <!-- Logotipo -->
+        </a>
+      </div>
+      <div class="nav_toggle" id="nav-toggle"> <!-- Ícone de alternância do menu (provavelmente para dispositivos móveis) -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="450"
+          height="24"
+          viewBox="0 0 24 24"
+          style="
+            fill: rgba(255, 255, 255, 1);
+          "
+        >
+          <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+        </svg>
+      </div>
+      <div class="nav_menu" id="nav-menu"> <!-- Menu de navegação -->
+        <div class="nav_close" id="nav-close"> <!-- Ícone de fechamento do menu -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            style="
+              fill: rgba(255, 255, 255, 1);
+            "
+          >
+            <path
+              d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"
+            ></path>
+          </svg>
+        </div>
+        <ul class="nav_list"> <!-- Lista de itens de navegação -->
+          <li class="nav_item">
+            <a href="/" class="nav_link active">Alimentos</a> <!-- Link para a página "Alimentos" com classe "active" para destacar -->
+          </li>
+          <li class="nav_item">
+            <a href="/" class="nav_link">Dicas</a> <!-- Link para a página "Dicas" -->
+          </li>
+          <li class="nav_item">
+            <a href="/" class="nav_link">Depoimentos</a> <!-- Link para a página "Depoimentos" -->
+          </li>
+          <li class="nav_item">
+            <a href="/" class="nav_link">Sobre</a> <!-- Link para a página "Sobre" -->
+          </li>
+        </ul>
+      </div>
+    </nav> <!-- Fim da barra de navegação -->
+  </header> <!-- Fim do cabeçalho -->
+
+  <!--============ CONTEÚDO ============-->
+
+  <!--============ JS ============-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script> <!-- Inclusão da biblioteca GSAP -->
+  <script src="./assets/js/main.js"></script> <!-- Inclusão de um arquivo JavaScript externo -->
+</body>
+</html>
