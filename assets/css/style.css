@@ -23,8 +23,8 @@
     margin: 3rem 0 0 0;
     padding: 0;
     font-family: var(--primary-font);
-    background-color: var(--first-color);
-  }
+    background-color: #ffffff; /* Corrigido para branco */
+}
   
   h1, p, ul {
     margin: 0;
