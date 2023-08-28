@@ -12,8 +12,13 @@
     }
 
     .firstsection-rightdiv {
-        width: 100%; /* Ocupa toda a largura da primeira seção */
-    }
+        background: #180c20;
+        background-size: cover;
+        background-position: bottom left;
+        width: 100%;
+        height: 100%;
+        display: flex;
+      }
 
     .heading {
         font-size: 20px;
