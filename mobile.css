@@ -2,15 +2,17 @@
 
     /* ==== Primeira seção ==== */
     .firstsection {
-        height: 270px;
+        height: auto; /* Remova a altura fixa para que o conteúdo determine a altura */
+        flex-direction: column; /* Coluna inversa para reorganizar os elementos */
     }
 
     .firstsection-leftdiv {
-        width: 70%;
+        width: 100%; /* Ocupa toda a largura da primeira seção */
+        height: 50%;
     }
 
     .firstsection-rightdiv {
-        width: 30%;
+        width: 100%; /* Ocupa toda a largura da primeira seção */
     }
 
     .heading {
@@ -22,15 +24,14 @@
     }
 
     .link-holder {
-        flex-direction: column;
-        justify-content: center;
-        padding-left: 30px;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-left: 0px;
     }
 
     .link-holder h4 {
         margin-bottom: 20px;
     }
-
 
     /* ==== Segunda seção ==== */
     .secondsection {
@@ -42,7 +43,6 @@
         margin-top: 30px;
     }
 
-
     /* ==== Terceira seção ==== */
     .thirdsection {
         flex-direction: column-reverse;
@@ -52,7 +52,6 @@
     .thirdsection-leftdiv {
         margin-top: 30px;
     }
-
 
     /* ==== Seção do rodapé ==== */
     .footer {
@@ -64,6 +63,4 @@
     .footer-iconcontainer {
         margin: 15px 0;
     }
-
 }
-
