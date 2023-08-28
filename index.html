@@ -2,111 +2,92 @@
 <html lang="pt">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Petistco</title>
-
-    <!--============ CSS ============-->
-
-    <link rel="stylesheet" href="./assets/css/style.css" />
-
-    <!--=========== Favicon ===============-->
-    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon" id="favicon_tag" />
-
-    <!--============ GOOGLE FONTS ============-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap"
-        rel="stylesheet"
-    />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petisco</title>
+    <!-- Importação de fontes do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    
+    <!-- Importação de folhas de estilo personalizadas -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="defaults.css">
+    <link rel="stylesheet" href="mobile.css">
 </head>
 
 <body>
-    <!--============ CABEÇALHO ============-->
-    <style>
-        .header {
-            background: linear-gradient(to right, #f78e0e 55%, #180c20 55%);
-            height: 270px;
-        }
-    </style>
 
-    <header class="header">
-        <nav class="nav grid">
-            <div>
-                <a href="/">
-                    <img src="./assets/img/logo.png" alt="Petisco" class="nav_logo" width="340" />
-                </a>
+  <!--=========== Favicon ===============-->
+  <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon" id="favicon_tag" />
+
+    <!-- Primeira seção da página -->
+    <div class="firstsection">
+     
+        
+    
+        <div class="firstsection-leftdiv">
+          <img src="./assets/img/logo.png" class="logo"/>
+        </div>
+
+        <div class="firstsection-rightdiv">
+            <!-- Links de navegação -->
+            <div class="link-holder">
+                <h4>Alimentos</h4>
+                <h4>Dicas</h4>
+                <h4>Depoimentos</h4>
+                <h4>Sobre</h4>
             </div>
-            <div class="nav_toggle" id="nav-toggle">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="450"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    style="fill: rgba(255, 255, 255, 1);"
-                >
-                    <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
-                </svg>
-            </div>
-            <div class="nav_menu" id="nav-menu">
-                <div class="nav_close" id="nav-close">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        style="fill: rgba(255, 255, 255, 1);"
-                    >
-                        <path
-                            d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"
-                        ></path>
-                    </svg>
-                </div>
-                <ul class="nav_list">
-                    <li class="nav_item">
-                        <a href="/" class="nav_link active">Alimentos</a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="/" class="nav_link">Dicas</a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="/" class="nav_link">Depoimentos</a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="/" class="nav_link">Sobre</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+        </div>
+    </div>
 
-    <!--============ CONTEÚDO ============-->
+    <!-- Segunda seção da página -->
+    <div class="secondsection">
 
-    <section class="bg-white border-b py-8" style="padding-top: 270px;"> <!-- para compensar a altura do cabeçalho -->
-   
+        <div class="secondsection-leftdiv">
+            <!-- Título da segunda seção -->
+            <h4>THE 2 COLUMN</h4>
+           
+            <!-- Parágrafos de texto -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Excepturi expedita</p>
+            <p>corporis iste, voluptatum repudiandae odio veritatis animi quasi illum cupiditate, suscipit sint rerum c
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde repellendus voluptatem, doloremque adipisci libero iure amet debitis delectus illo quidem</p>
+        </div>
 
-    <section class="bg-white border-b py-8">
-        <div class="container max-w-5xl mx-auto m-8">
-            <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-                Alimentos
-            </h2>
-            <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-              Dicas
-          </h2>
-          <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-            Depoimentos
-        </h2>
-        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-          Sobre o Projeto
-      </h2>
-            
+        <div class="secondsection-rightdiv">
+            <!-- Imagem da segunda seção -->
+            <img src="./images/image2.jpg" alt="">
+        </div>
 
-            
+    </div>
 
-    <!--============ JS ============-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
-    <script src="./assets/js/main.js"></script>
+    <!-- Terceira seção da página -->
+    <div class="thirdsection">
+        <div class="thirdsection-leftdiv">
+        </div>
+        <div class="thirdsection-rightdiv">
+
+            <!-- Parágrafos de texto da terceira seção -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Excepturi expedita</p>
+            <p>corporis iste, voluptatum repudiandae odio veritatis animi quasi illum cupiditate, suscipit sint rerum c
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde repellendus voluptatem, doloremque adipisci libero iure amet debitis delectus illo quidem</p>
+        </div>
+    </div>
+
+    <!-- Rodapé da página -->
+    <div class="footer">
+        <!-- Informações do rodapé -->
+        <p>Projeto Integrador Grupo 13</p>
+        <!-- Ícones de redes sociais no rodapé -->
+        <div class="footer-iconcontainer">
+            <i class="fa-brands fa-linkedin-in footericon"></i>
+            <i class="fa-brands fa-twitter footericon"></i>
+            <i class="fa-brands fa-github footericon"></i>
+        </div>
+    </div>
 </body>
 
 </html>
