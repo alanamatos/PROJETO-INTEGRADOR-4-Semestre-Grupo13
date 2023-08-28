@@ -13,8 +13,9 @@
 
     .firstsection-rightdiv {
         background: #180c20;
+        background-image: url("./img1.png");
         background-size: cover;
-        background-position: bottom left;
+        background-position: start;
         width: 100%;
         height: 100%;
         display: flex;
