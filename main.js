@@ -14,14 +14,14 @@ var logoImages = [
 
 // Array com os nomes das imagens de cabeçalho
 var headerImages = [
-    "./assets/images/cabeçalho/img1.png",
-    "./assets/images/cabeçalho/img2.png",
-    "./assets/images/cabeçalho/img3.png",
-    "./assets/images/cabeçalho/img4.png",
-    "./assets/images/cabeçalho/img5.png",
-    "./assets/images/cabeçalho/img6.png",
-    "./assets/images/cabeçalho/img7.png",
-    "./assets/images/cabeçalho/img8.png"
+    "./img1.png",
+    "./img2.png",
+    "./img3.png",
+    "./img4.png",
+    "./img5.png",
+    "./img6.png",
+    "./img7.png",
+    "./img8.png"
   ];
 
 // Função para atualizar o logotipo de forma aleatória

@@ -26,9 +26,9 @@ body {
 
 .firstsection-leftdiv {
   padding: 20px;
-  
+  background: #f78e0e;
   background-size: 80%;
-  background-image: url("./assets/images/cabeçalho/img.png");
+  background-image: url("./img.png");
   background-repeat: no-repeat; /* Evita a repetição da imagem */
   width: 50%;
   height: 100%;
