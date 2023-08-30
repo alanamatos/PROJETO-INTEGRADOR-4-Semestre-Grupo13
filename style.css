@@ -101,7 +101,7 @@ span {
 .secondsection-leftdiv{
   width: 310px;
   height: 400px;
-  background: var(--gray-color);
+  background: #f78e0e;
   padding: 40px 25px;
 }
 .secondsection-leftdiv p{
@@ -111,13 +111,13 @@ span {
   margin-left: 20px;
   width: 340px;
   height: 460px;
-  background: var(--main-color);
+  background: #f78e0e;
 }
 
 /* ==== Terceira seção ==== */
 
 .thirdsection {
-  background: var(--gray-color);
+  background: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -139,7 +139,7 @@ span {
 }
 
 .thirdsection-rightdiv {
-  background: var(--main-color);
+  background: #f78e0e;;
   padding: 30px 25px;
 
 }
@@ -151,10 +151,10 @@ span {
 /* ==== Seção do rodapé ==== */
 
 .footer {
-  background: var(--main-color);
+  background: #180c20;
   padding: 20px 0;
   flex-wrap: wrap;
-  color: var(--white-color);
+  color: #ffffff;
   display: flex;
   flex-direction: row;
   align-items: center;
