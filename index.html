@@ -1,83 +1,143 @@
 <!DOCTYPE html>
-<html lang="pt">
-
+<html lang="pt">    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Petisco</title>
-    <!--=============== Importação de fontes do Google Fonts ===============-->
+    <!-- Importação de fontes do Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
-    
-    <!--=============== Importação de folhas de estilo personalizadas ===============-->
+    <!-- Importação de folhas de estilo personalizadas -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="defaults.css">
     <link rel="stylesheet" href="mobile.css">
-     <!--============ JS ============-->
+    
+    <!-- JS -->
     <script src="main.js"></script>
-
-     <!--=========== Favicon ===============-->
+    
+    <!-- Favicon -->
     <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon" />
 </head>
 <body>
-
-    <!--=============== Cabeçalho ===============-->
+    <!-- Cabeçalho -->
     <div class="firstsection">
         <div class="firstsection-leftdiv">
             <img class="logo" id="logoImage"/>
-    </div>
+        </div>
         <div class="firstsection-rightdiv">
-            <!--=============== Links de navegação ===============-->
+            <!-- Links de navegação -->
             <div class="link-holder">
-                <h4>Alimentos</h4>
-                <h4>Dicas</h4>
-                <h4>Depoimentos</h4>
-                <h4>Sobre</h4>
+                <h4><a href="#alimentos">Alimentos</a></h4>
+                <h4><a href="#dicas">Dicas</a></h4>
+                <h4><a href="#depoimentos">Depoimentos</a></h4>
+                <h4><a href="#sobre">Sobre</a></h4>
             </div>
         </div>
     </div>
 
-    <!--=============== Segunda seção da página ===============-->
-    <div class="secondsection">
-
-        <div class="secondsection-leftdiv">
-            <!--=============== Título da segunda seção ===============-->
-            <h4>Teste</h4>
-           
-            <!--=============== Parágrafos de texto ===============-->
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Excepturi expedita</p>
-            <p>corporis iste, voluptatum repudiandae odio veritatis animi quasi illum cupiditate, suscipit sint rerum c
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde repellendus voluptatem, doloremque adipisci libero iure amet debitis delectus illo quidem</p>
-        </div>
-
-        <div class="secondsection-rightdiv">
-            <!--=============== Imagem da segunda seção ===============-->
-            <img src="./images/image2.jpg" alt="">
-        </div>
-
-    </div>
-
-    <!--=============== Terceira seção da página ===============-->
-    <div class="thirdsection">
-        <div class="thirdsection-leftdiv">
-        </div>
-        <div class="thirdsection-rightdiv">
-
-            <!--=============== Parágrafos de texto da terceira seção ===============-->
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Excepturi expedita</p>
-            <p>corporis iste, voluptatum repudiandae odio veritatis animi quasi illum cupiditate, suscipit sint rerum c
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde repellendus voluptatem, doloremque adipisci libero iure amet debitis delectus illo quidem</p>
+    <!-- Segunda seção da página (Alimentos) -->
+    <div class="secondsection" id="alimentos">
+        <div class="secondsection-div">
+            <!-- Título da segunda seção -->
+            <h2><u style="text-decoration: underline; text-decoration-color: #f78e0e;">Alimentos</u></h2>
+            <div style="margin-bottom: 20px;"></div>
+            <!-- Parágrafos de texto -->
+            <p>Já se perguntou se aquela cenourinha super chique e salvável faz bem para o seu pet, ou para você?</p> 
+            <p>Se seu doguinho pode comer chocolate, já que ele está fazendo aquela carinha de “pidão” que você não resiste?</p>
+            <p>Para te ajudar a saber quais alimentos não são indicados ou que podem fazer mal para o seu melhor amigo é que criamos esse portal.</p>
+            <p>Então é só escolher qual seu pet, o alimento e ver se eles dão match!</p>
         </div>
     </div>
 
-    <!--=============== Rodapé da página ===============-->
+<body>
+  <div id="container">
+    <button id="expand-button">Expandir</button>
+    <button class="sub-button"></button>
+    <button class="sub-button"></button>
+    <button class="sub-button"></button>
+    <button class="sub-button"></button>
+    <button class="sub-button"></button>
+    <button class="sub-button"></button>
+    <button class="sub-button"></button>
+    <button class="sub-button"></button>
+    <button class="sub-button"></button>
+  </div>
+
+  <script>
+    const expandButton = document.getElementById("expand-button");
+    const container = document.getElementById("container");
+    const subButtons = document.querySelectorAll(".sub-button");
+
+    expandButton.addEventListener("click", () => {
+      container.classList.toggle("expanded");
+      subButtons.forEach((button) => {
+        button.style.display = "block";
+      });
+
+      // Ocultar o botão de expandir após a expansão
+      expandButton.style.display = "none";
+    });
+  </script>
+</body>
+
+
+<!-- Segunda seção da página (Alimentos) -->
+<div class="secondsection" id="dicas">
+    <div class="secondsection-div">
+        <!-- Título da segunda seção -->
+        <h2><u style="text-decoration: underline; text-decoration-color: #f78e0e;">Dicas</u></h2>
+        <div style="margin-bottom: 20px;"></div>
+        <!-- Parágrafos de texto -->
+        <p>Tenha cuidado com excessos!</p> 
+        <p>Mesmo que um alimento seja benéfico para seu pet, comer muitos petiscos pode fazer mal ou gerar um comportamento negativo.</p>
+        <div style="margin-bottom: 20px;"></div>
+        <p>Se a intenção for passar a dar ao pet uma alimentação caseira, a recomendação é procurar um médico-veterinário especialista em nutrição.</p>
+        <p>Só ele poderá montar um cardápio balanceado, com todos os nutrientes necessários à saúde do pet.</p>
+    </div>
+</div>
+
+<!-- Segunda seção da página (Alimentos) -->
+<div class="secondsection" id="depoimentos">
+    <div class="secondsection-div">
+        <!-- Título da segunda seção -->
+        <h2><u style="text-decoration: underline; text-decoration-color: #f78e0e;">Depoimentos</u></h2>
+        
+    </div>
+</div>
+
+
+<div class="thirdsection">
+    <div class="thirdsection-leftdiv">
+    </div>
+    
+        <!--=============== Parágrafos de texto da terceira seção ===============-->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Excepturi expedita</p>
+        <p>corporis iste, voluptatum repudiandae odio veritatis animi quasi illum cupiditate, suscipit sint rerum c
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde repellendus voluptatem, doloremque adipisci libero iure amet debitis delectus illo quidem</p>
+    
+</div>
+
+<!-- Segunda seção da página (Alimentos) -->
+<div class="secondsection" id="sobre">
+    <div class="secondsection-div">
+        <!-- Título da segunda seção -->
+        <h2><u style="text-decoration: underline; text-decoration-color: #f78e0e;">Sobre o Projeto</u></h2>
+        <div style="margin-bottom: 20px;"></div>
+        <!-- Parágrafos de texto -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Excepturi expedita</p>
+        <p>corporis iste, voluptatum repudiandae odio veritatis animi quasi illum cupiditate, suscipit sint rerum c
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde repellendus voluptatem, doloremque adipisci libero iure amet debitis delectus illo quidem</p>
+    </div>
+</div>
+
+
+    <!-- Rodapé da página -->
     <div class="footer">
         <p>Projeto Integrador Grupo 13</p>
     </div>
 </body>
-
 </html>

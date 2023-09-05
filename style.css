@@ -129,8 +129,8 @@ span {
 
 .thirdsection-leftdiv,
 .thirdsection-rightdiv {
-  width: 350px;
-  height: 460px;
+  width: 180px;
+  height: 180px;
 }
 
 .thirdsection-leftdiv{
@@ -163,3 +163,34 @@ span {
   max-width: 1500px;
 }
 
+
+
+a {
+  color: white;
+  /* Outros estilos, como remoção do sublinhado */
+  text-decoration: none;
+}
+
+#container {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+
+.sub-button {
+  width: 30%;
+  height: 30%;
+  background-color: lightgray;
+  margin: 1%;
+  display: none;
+}
+
+#expand-button.expanded {
+  width: 300px;
+  height: 300px;
+}
