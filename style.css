@@ -76,7 +76,6 @@ span {
   width: 100%;
 }
 .link-holder h4 {
-  
   color: #ffffff; /* Cor inicial dos links */
   text-decoration: none; /* Remover sublinhado padrão dos links */
   transition: text-decoration 0.3s; /* Efeito de transição para o sublinhado */
@@ -125,7 +124,7 @@ span {
   flex-wrap: wrap;
   padding: 50px 0;
   margin: 0 auto;
-  max-width: 1500px;
+  max-width: 800px;
 }
 
 .thirdsection-leftdiv,
@@ -134,19 +133,24 @@ span {
   height: 180px;
 }
 
-.thirdsection-leftdiv{
-  background: url("./images/image3.jpg");
+.thirdsection-leftdiv {
+  background: url("./images/image3.jpeg");
   background-size: cover;
+  border-radius: 10px; /* Cantos arredondados */
 }
 
 .thirdsection-rightdiv {
-  background: #f78e0e;;
-  padding: 30px 25px;
-
+  background: #f78e0e;
+  padding: 40px;
+  flex: 1; /* Ocupar todo o espaço restante */
+  border-radius: 10px; /* Cantos arredondados */
 }
 
-.thirdsection-rightdiv p{
+.thirdsection-rightdiv p {
   margin: 10px 0;
+  text-align: justify; /* Alinhar o texto justificado */
+  color: black; /* Cor do texto */
+
 }
 
 /* ==== Seção do rodapé ==== */
@@ -194,11 +198,4 @@ a {
 #expand-button.expanded {
   width: 300px;
   height: 300px;
-}
-
-
-.depoimento-img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%; /* Isso cria cantos arredondados */
 }

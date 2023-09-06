@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
-
+<html lang="pt">    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,19 +13,18 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="defaults.css">
     <link rel="stylesheet" href="mobile.css">
-
+    
     <!-- JS -->
     <script src="main.js"></script>
-
+    
     <!-- Favicon -->
     <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon" />
 </head>
-
 <body>
     <!-- Cabeçalho -->
     <div class="firstsection">
         <div class="firstsection-leftdiv">
-            <img class="logo" id="logoImage" />
+            <img class="logo" id="logoImage"/>
         </div>
         <div class="firstsection-rightdiv">
             <!-- Links de navegação -->
@@ -41,113 +39,136 @@
 
     <!-- Alimentos -->
     <div class="secondsection" id="alimentos">
-        <div class="secondsection-div">
+        <div class="secondsection-div" style="margin-left: 90px; margin-right: 90px;">
             <!-- Título da segunda seção -->
             <h2><u style="text-decoration: underline; text-decoration-color: #f78e0e;">Alimentos</u></h2>
             <div style="margin-bottom: 20px;"></div>
             <!-- Parágrafos de texto -->
-            <p style="text-align: justify;">Já se perguntou se aquela cenourinha super chique e salvável faz bem para o seu pet, ou para você?</p>
-            <p style="text-align: justify;">Se seu doguinho pode comer chocolate, já que ele está fazendo aquela carinha de “pidão” que você não resiste?</p>
-            <p style="text-align: justify;">Para te ajudar a saber quais alimentos não são indicados ou que podem fazer mal para o seu melhor amigo é que criamos esse portal.</p>
-            <p style="text-align: justify;">Então é só escolher qual seu pet, o alimento e ver se eles dão match!</p>
+            <p style="text-align: justify;">Já se perguntou se aquela cenourinha super chique e salvável faz bem para o seu pet, ou para você?
+            Se seu doguinho pode comer chocolate, já que ele está fazendo aquela carinha de “pidão” que você não resiste?
+            Para te ajudar a saber quais alimentos não são indicados ou que podem fazer mal para o seu melhor amigo é que criamos esse portal.
+            Então é só escolher qual seu pet, o alimento e ver se eles dão match!</p>
         </div>
     </div>
 
-    <!-- Botões -->
-    <div id="container">
-        <button id="expand-button">PetDex</button>
-        <button class="sub-button"></button>
-        <button class="sub-button"></button>
-        <button class="sub-button"></button>
-        <button class="sub-button"></button>
-        <button class="sub-button"></button>
-        <button class="sub-button"></button>
-        <button class="sub-button"></button>
-        <button class="sub-button"></button>
-        <button class="sub-button"></button>
+
+  <div id="container">
+    <button id="expand-button">PetDex</button>
+    <button class="sub-button"></button>
+    <button class="sub-button"></button>
+    <button class="sub-button"></button>
+    <button class="sub-button"></button>
+    <button class="sub-button"></button>
+    <button class="sub-button"></button>
+    <button class="sub-button"></button>
+    <button class="sub-button"></button>
+    <button class="sub-button"></button>
+  </div>
+
+  <script>
+    const expandButton = document.getElementById("expand-button");
+    const container = document.getElementById("container");
+    const subButtons = document.querySelectorAll(".sub-button");
+
+    expandButton.addEventListener("click", () => {
+      container.classList.toggle("expanded");
+      subButtons.forEach((button) => {
+        button.style.display = "block";
+      });
+
+      // Ocultar o botão de expandir após a expansão
+      expandButton.style.display = "none";
+    });
+  </script>
+
+
+
+<!-- Dicas -->
+<div class="secondsection" id="dicas">
+    <div class="secondsection-div" style="margin-left: 90px; margin-right: 90px;">
+        <!-- Título da segunda seção -->
+        <h2><u style="text-decoration: underline; text-decoration-color: #f78e0e;">Dicas</u></h2>
+        <div style="margin-bottom: 20px;"></div>
+        <!-- Parágrafos de texto -->
+    
+        <p style="text-align: justify;">Tenha cuidado com excessos!
+        Mesmo que um alimento seja benéfico para seu pet, comer muitos petiscos pode fazer mal ou gerar um comportamento negativo.</p>
+        <div style="margin-bottom: 20px;"></div>
+        <p style="text-align: justify;">Se a intenção for passar a dar ao pet uma alimentação caseira, a recomendação é procurar um médico-veterinário especialista em nutrição.
+        Só ele poderá montar um cardápio balanceado, com todos os nutrientes necessários à saúde do pet.</p>
     </div>
+</div>
+</div>
 
-    <script>
-        const expandButton = document.getElementById("expand-button");
-        const container = document.getElementById("container");
-        const subButtons = document.querySelectorAll(".sub-button");
-
-        expandButton.addEventListener("click", () => {
-            container.classList.toggle("expanded");
-            subButtons.forEach((button) => {
-                button.style.display = "block";
-            });
-
-            // Ocultar o botão de expandir após a expansão
-            expandButton.style.display = "none";
-        });
-    </script>
-
-    <!-- Dicas -->
-    <div class="secondsection" id="dicas">
-        <div class="secondsection-div">
-            <!-- Título da segunda seção -->
-            <h2><u style="text-decoration: underline; text-decoration-color: #f78e0e;">Dicas</u></h2>
-            <div style="margin-bottom: 20px;"></div>
-            <!-- Parágrafos de texto -->
-            <p style="text-align: justify;">Tenha cuidado com excessos!</p>
-            <p style="text-align: justify;">Mesmo que um alimento seja benéfico para seu pet, comer muitos petiscos pode fazer mal ou gerar um comportamento negativo.</p>
-            <div style="margin-bottom: 20px;"></div>
-            <p style="text-align: justify;">Se a intenção for passar a dar ao pet uma alimentação caseira, a recomendação é procurar um médico-veterinário especialista em nutrição.</p>
-            <p style="text-align: justify;">Só ele poderá montar um cardápio balanceado, com todos os nutrientes necessários à saúde do pet.</p>
-        </div>
+<!-- Terceira seção -->
+<div class="secondsection" id="depoimentos"></div>
+<div class="secondsection-div" style="margin-left: 90px; margin-right: 90px;">
+    <h2><u style="text-decoration: underline; text-decoration-color: #f78e0e;">Depoimentos</u></h2>
+</div>
+<div class="thirdsection">
+    <div class="thirdsection-leftdiv" id="imageContainer"></div>
+    <div class="thirdsection-rightdiv">
+        <!-- Texto será atualizado dinamicamente aqui -->
     </div>
+</div>
 
-    <!-- Depoimentos -->
-    <div class="secondsection" id="depoimentos">
-        <div class="secondsection-div">
-            <!-- Título da segunda seção -->
-            <h2><u style="text-decoration: underline; text-decoration-color: #f78e0e;">Depoimentos</u></h2>
-        </div>
+
+
+<!-- Sobre o Projeto -->
+<div class="secondsection" id="sobre">
+    <div class="secondsection-div" style="margin-left: 90px; margin-right: 90px;">
+        <!-- Título da segunda seção -->
+        <h2><u style="text-decoration: underline; text-decoration-color: #f78e0e;">Sobre o Projeto</u></h2>
+        <div style="margin-bottom: 20px;"></div>
+        <!-- Parágrafos de texto -->
+        <p style="text-align: justify;">Uma das coisas mais valiosas que uma pessoa pode ter na vida é um animal de estimação.
+            Seja ele um cachorro, um gato, um papagaio ou até mesmo um porquinho-da-índia; todos eles têm o seu valor a quem os possui.
+            E, para quem tem um, com certeza em algum momento da vida se deparou com uma situação inusitada.
+            Estamos na cozinha preparando uma refeição, e todos os ingredientes estão separados para iniciar os trabalhos.
+            Até que ouvimos um som familiar: as patas do nosso animal de estimação batendo pelos pisos da casa, vindo em nossa direção;
+            e o mais engraçado é que já sabemos o que eles querem: comer o que estamos cozinhando, independente do que seja.
+            Desde frutas, legumes e verduras, até mesmo aqueles pratos instantâneos que é só deixar 3 minutos no micro-ondas e está pronto;
+            ele sempre está ao nosso lado com os olhos extremamente abertos, pedindo um pedaço.
+            Nesse momento, uma pergunta pode passar na sua cabeça: será que ele pode comer isso?
+            Sabendo dessa necessidade de unificar essas informações em uma plataforma onde as pessoas possam confiar na informação apresentada,
+            especificamente nesse nicho pet, que este projeto foi desenvolvido:
+            uma plataforma onde as pessoas possam confirmar se seu animal de estimação pode comer determinado alimento. 
+            Um lugar onde a pessoa sabe que a informação é confiável e que vai estar disponível a qualquer momento,
+            em qualquer lugar; onde precisar. Lugar esse que os desenvolvedores deste projeto batizaram carinhosamente de “Petisco”.
+            este projeto é um trabalho desenvolvido para a disciplina de Desenvolvimento de Sistemas orientados a
+            dispositivos móveis e baseados na web, do Centro Universitário Senac.</p>
     </div>
+</div>
 
-    <div class="thirdsection">
-        <div class="thirdsection-leftdiv">
-        </div>
 
-        <!-- Parágrafos de texto da terceira seção -->
-        <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit.Excepturi expedita</p>
-        <p style="text-align: justify;">corporis iste, voluptatum repudiandae odio veritatis animi quasi illum cupiditate</p>
-        <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde repellendus voluptatem</p>
-        <p style="text-align: justify;"> adipisci libero iure amet debitis delectus illo quidem</p>
-    </div>
-
-    <!-- Sobre o Projeto -->
-    <div class="secondsection" id="sobre">
-        <div class="secondsection-div">
-            <!-- Título da segunda seção -->
-            <h2><u style="text-decoration: underline; text-align: justify; text-decoration-color: #f78e0e;">Sobre o Projeto</u></h2>
-            <div style="margin-bottom: 20px;"></div>
-            <!-- Parágrafos de texto -->
-
-            <p style="text-align: justify;">Uma das coisas mais valiosas que uma pessoa pode ter na vida é um animal de estimação.</p>
-            <p style="text-align: justify;">Seja ele um cachorro, um gato, um papagaio ou até mesmo um porquinho-da-índia; todos eles têm o seu valor a quem os possui.</p>
-            <p style="text-align: justify;">E, para quem tem um, com certeza em algum momento da vida se deparou com uma situação inusitada.</p>
-            <p style="text-align: justify;">Estamos na cozinha preparando uma refeição, e todos os ingredientes estão separados para iniciar os trabalhos.</p>
-            <p style="text-align: justify;">Até que ouvimos um som familiar: as patas do nosso animal de estimação batendo pelos pisos da casa, vindo em nossa direção;</p>
-            <p style="text-align: justify;">e o mais engraçado é que já sabemos o que eles querem: comer o que estamos cozinhando, independente do que seja.</p>
-            <p style="text-align: justify;">Desde frutas, legumes e verduras, até mesmo aqueles pratos instantâneos que é só deixar 3 minutos no micro-ondas e está pronto;</p>
-            <p style="text-align: justify;">ele sempre está ao nosso lado com os olhos extremamente abertos, pedindo um pedaço.</p>
-            <p style="text-align: justify;">Nesse momento, uma pergunta pode passar na sua cabeça: será que ele pode comer isso?</p>
-            <p style="text-align: justify;">Sabendo dessa necessidade de unificar essas informações em uma plataforma onde as pessoas possam confiar na informação apresentada,</p>
-            <p style="text-align: justify;">especificamente nesse nicho pet, que este projeto foi desenvolvido:</p>
-            <p style="text-align: justify;">uma plataforma onde as pessoas possam confirmar se seu animal de estimação pode comer determinado alimento.</p>
-            <p style="text-align: justify;">Um lugar onde a pessoa sabe que a informação é confiável e que vai estar disponível a qualquer momento,</p>
-            <p style="text-align: justify;">em qualquer lugar; onde precisar. Lugar esse que os desenvolvedores deste projeto batizaram carinhosamente de “Petisco”.</p>
-            <p style="text-align: justify;">Este projeto é um trabalho desenvolvido para a disciplina de Desenvolvimento de Sistemas orientados a</p>
-            <p style="text-align: justify;">dispositivos móveis e baseados na web, do Centro Universitário Senac.</p>
-        </div>
-    </div>
 
     <!-- Rodapé da página -->
     <div class="footer">
         <p>Projeto Integrador Grupo 13</p>
     </div>
-</body>
 
+     <!-- JavaScript para alternar o plano de fundo e texto da terceira seção -->
+    <script>
+        const thirdSectionLeftDiv = document.getElementById("imageContainer");
+        const textContainer = document.querySelector(".thirdsection-rightdiv");
+        const images = ["image1.jpeg", "image2.jpeg", "image3.jpeg"];
+        const texts = [
+            "Este é um depoimento sobre a nossa experiência com nosso querido pet. Ele sempre nos enche de alegria e amor.",
+            "Nossa jornada com nosso amado animal de estimação tem sido incrível. Ele é parte da nossa família e traz muita felicidade aos nossos dias.",
+            "Estamos gratos por todos os momentos maravilhosos que compartilhamos com nosso pet. Ele é verdadeiramente especial para nós."
+        ];
+        let currentIndex = 0;
+
+        function changeBackgroundAndText() {
+            currentIndex = (currentIndex + 1) % images.length;
+            const imageUrl = `./images/${images[currentIndex]}`;
+            const currentText = texts[currentIndex];
+            thirdSectionLeftDiv.style.backgroundImage = `url('${imageUrl}')`;
+            textContainer.innerHTML = `<p>${currentText}</p>`;
+        }
+
+        // Altera o plano de fundo e o texto a cada 5 segundos (5000 ms)
+        setInterval(changeBackgroundAndText, 5000);
+    </script>
+</body>
 </html>
