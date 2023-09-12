@@ -1,30 +1,33 @@
 <!DOCTYPE html>
-<html lang="pt">    
+<html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Petisco</title>
+    
     <!-- Importação de fontes do Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+
     <!-- Importação de folhas de estilo personalizadas -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="defaults.css">
     <link rel="stylesheet" href="mobile.css">
-    
+
     <!-- JS -->
     <script src="main.js"></script>
-    
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon" />
 </head>
+
 <body>
     <!-- Cabeçalho -->
     <div class="firstsection">
         <div class="firstsection-leftdiv">
-            <img class="logo" id="logoImage"/>
+            <img class="logo" id="logoImage" />
         </div>
         <div class="firstsection-rightdiv">
             <!-- Links de navegação -->
@@ -37,53 +40,104 @@
         </div>
     </div>
 
-    <!-- Alimentos -->
-    <div class="secondsection" id="alimentos">
-        <div class="secondsection-div" style="margin-left: 90px; margin-right: 90px;">
-            <!-- Título da segunda seção -->
-            <h2><u style="text-decoration: underline; text-decoration-color: #f78e0e;">Alimentos</u></h2>
-            <div style="margin-bottom: 20px;"></div>
-            <!-- Parágrafos de texto -->
-            <p style="text-align: justify;">Já se perguntou se aquela cenourinha super chique e salvável faz bem para o seu pet, ou para você?
-            Se seu doguinho pode comer chocolate, já que ele está fazendo aquela carinha de “pidão” que você não resiste?
-            Para te ajudar a saber quais alimentos não são indicados ou que podem fazer mal para o seu melhor amigo é que criamos esse portal.
+ <!-- Alimentos -->
+<div class="secondsection" id="alimentos">
+    <div class="secondsection-div" style="margin-left: 90px; margin-right: 90px;">
+        <!-- Título da segunda seção -->
+        <h2><u style="text-decoration: underline; text-decoration-color: #f78e0e;">Alimentos</u></h2>
+        <div style="margin-bottom: 20px;"></div>
+        <!-- Parágrafos de texto -->
+        <p style="text-align: justify;">Já se perguntou se aquela cenourinha super chique e salvável faz bem para
+            o seu pet, ou para você?
+            Se seu doguinho pode comer chocolate, já que ele está fazendo aquela carinha de “pidão” que você não
+            resiste?
+            Para te ajudar a saber quais alimentos não são indicados ou que podem fazer mal para o seu melhor
+            amigo é que criamos esse portal.
             Então é só escolher qual seu pet, o alimento e ver se eles dão match!</p>
+    </div>
+
+    <!-- Botão "Abrir" -->
+    <div class="container">
+        <button id="botaoAbrir">Abrir</button>
+    </div>
+
+    <!-- Quadrado Externo -->
+    <div id="quadradoExterno" class="quadrado" style="display: none;">
+        <button id="botaoVoltarExterno" class="botaoVoltar">Voltar</button>
+        <div class="botoesInternos">
+            <button class="botaoInterno">Botão 1</button>
+            <button class="botaoInterno">Botão 2</button>
+            <button class="botaoInterno">Botão 3</button>
+            <button class="botaoInterno">Botão 4</button>
+            <button class="botaoInterno">Botão 5</button>
+            <button class="botaoInterno">Botão 6</button>
+            <button class="botaoInterno">Botão 7</button>
+            <button class="botaoInterno">Botão 8</button>
+            <button class="botaoInterno">Botão 9</button>
         </div>
     </div>
 
+    <!-- Quadrado Interno -->
+    <div id="quadradoInterno" class="quadrado" style="display: none;">
+        <button id="botaoVoltarInterno" class="botaoVoltar">Voltar</button>
+        <div class="conteudoInterno">
+            <p class="textoInterno texto1">Texto do botão 1.</p>
+            <p class="textoInterno texto2">Texto do botão 2.</p>
+            <p class="textoInterno texto3">Texto do botão 3.</p>
+            <p class="textoInterno texto4">Texto do botão 4.</p>
+            <p class="textoInterno texto5">Texto do botão 5.</p>
+            <p class="textoInterno texto6">Texto do botão 6.</p>
+            <p class="textoInterno texto7">Texto do botão 7.</p>
+            <p class="textoInterno texto8">Texto do botão 8.</p>
+            <p class="textoInterno texto9">Texto do botão 9.</p>
+        </div>
+    </div>
+</div>
 
-  <div id="container">
-    <button id="expand-button">PetDex</button>
-    <button class="sub-button"></button>
-    <button class="sub-button"></button>
-    <button class="sub-button"></button>
-    <button class="sub-button"></button>
-    <button class="sub-button"></button>
-    <button class="sub-button"></button>
-    <button class="sub-button"></button>
-    <button class="sub-button"></button>
-    <button class="sub-button"></button>
-  </div>
 
-  <script>
-    const expandButton = document.getElementById("expand-button");
-    const container = document.getElementById("container");
-    const subButtons = document.querySelectorAll(".sub-button");
+<!-- JavaScript para alternar a exibição dos elementos -->
+<script>
+    const botaoAbrir = document.getElementById('botaoAbrir');
+    const botaoVoltarExterno = document.getElementById('botaoVoltarExterno');
+    const botaoVoltarInterno = document.getElementById('botaoVoltarInterno');
+    const quadradoExterno = document.getElementById('quadradoExterno');
+    const quadradoInterno = document.getElementById('quadradoInterno');
+    const botoesInternos = document.querySelectorAll('.botaoInterno');
+    const textoInternos = document.querySelectorAll('.textoInterno');
 
-    expandButton.addEventListener("click", () => {
-      container.classList.toggle("expanded");
-      subButtons.forEach((button) => {
-        button.style.display = "block";
-      });
-
-      // Ocultar o botão de expandir após a expansão
-      expandButton.style.display = "none";
+    botaoAbrir.addEventListener('click', () => {
+        quadradoExterno.style.display = 'block';
+        botaoAbrir.style.display = 'none'; // Esconde o botão "Abrir"
     });
-  </script>
+
+    botaoVoltarExterno.addEventListener('click', () => {
+        quadradoExterno.style.display = 'none';
+        quadradoInterno.style.display = 'none';
+         botaoAbrir.style.display = 'block'; // Mostra o botão "Abrir" novamente
+    });
+
+    botoesInternos.forEach((botao, index) => {
+        botao.addEventListener('click', () => {
+            quadradoExterno.style.display = 'none';
+            quadradoInterno.style.display = 'block';
+           
+
+            // Exibe o texto correspondente ao botão clicado
+            textoInternos.forEach((texto, textoIndex) => {
+                texto.style.display = textoIndex === index ? 'block' : 'none';
+            });
+        });
+    });
+
+    botaoVoltarInterno.addEventListener('click', () => {
+        quadradoExterno.style.display = 'block';
+        quadradoInterno.style.display = 'none';
+    });
+</script>
 
 
 
-<!-- Dicas -->
+    <!-- Dicas -->
 <div class="secondsection" id="dicas">
     <div class="secondsection-div" style="margin-left: 90px; margin-right: 90px;">
         <!-- Título da segunda seção -->
@@ -100,54 +154,59 @@
 </div>
 </div>
 
-<!-- Terceira seção -->
-<div class="secondsection" id="depoimentos"></div>
-<div class="secondsection-div" style="margin-left: 90px; margin-right: 90px;">
-    <h2><u style="text-decoration: underline; text-decoration-color: #f78e0e;">Depoimentos</u></h2>
-</div>
-<div class="thirdsection">
-    <div class="thirdsection-leftdiv" id="imageContainer"></div>
-    <div class="thirdsection-rightdiv">
-        <!-- Texto será atualizado dinamicamente aqui -->
-    </div>
-</div>
-
-
-
-<!-- Sobre o Projeto -->
-<div class="secondsection" id="sobre">
+    <!-- Depoimentos -->
+    <div class="secondsection" id="depoimentos"></div>
     <div class="secondsection-div" style="margin-left: 90px; margin-right: 90px;">
-        <!-- Título da segunda seção -->
-        <h2><u style="text-decoration: underline; text-decoration-color: #f78e0e;">Sobre o Projeto</u></h2>
-        <div style="margin-bottom: 20px;"></div>
-        <!-- Parágrafos de texto -->
-        <p style="text-align: justify;">Uma das coisas mais valiosas que uma pessoa pode ter na vida é um animal de estimação.
-            Seja ele um cachorro, um gato, um papagaio ou até mesmo um porquinho-da-índia; todos eles têm o seu valor a quem os possui.
-            E, para quem tem um, com certeza em algum momento da vida se deparou com uma situação inusitada.
-            Estamos na cozinha preparando uma refeição, e todos os ingredientes estão separados para iniciar os trabalhos.
-            Até que ouvimos um som familiar: as patas do nosso animal de estimação batendo pelos pisos da casa, vindo em nossa direção;
-            e o mais engraçado é que já sabemos o que eles querem: comer o que estamos cozinhando, independente do que seja.
-            Desde frutas, legumes e verduras, até mesmo aqueles pratos instantâneos que é só deixar 3 minutos no micro-ondas e está pronto;
-            ele sempre está ao nosso lado com os olhos extremamente abertos, pedindo um pedaço.
-            Nesse momento, uma pergunta pode passar na sua cabeça: será que ele pode comer isso?
-            Sabendo dessa necessidade de unificar essas informações em uma plataforma onde as pessoas possam confiar na informação apresentada,
-            especificamente nesse nicho pet, que este projeto foi desenvolvido:
-            uma plataforma onde as pessoas possam confirmar se seu animal de estimação pode comer determinado alimento. 
-            Um lugar onde a pessoa sabe que a informação é confiável e que vai estar disponível a qualquer momento,
-            em qualquer lugar; onde precisar. Lugar esse que os desenvolvedores deste projeto batizaram carinhosamente de “Petisco”.
-            este projeto é um trabalho desenvolvido para a disciplina de Desenvolvimento de Sistemas orientados a
-            dispositivos móveis e baseados na web, do Centro Universitário Senac.</p>
+        <h2><u style="text-decoration: underline; text-decoration-color: #f78e0e;">Depoimentos</u></h2>
     </div>
-</div>
+    <div class="thirdsection">
+        <div class="thirdsection-leftdiv" id="imageContainer"></div>
+        <div class="thirdsection-rightdiv">
+            <!-- Texto será atualizado dinamicamente aqui -->
+        </div>
+    </div>
 
-
+    <!-- Sobre o Projeto -->
+    <div class="secondsection" id="sobre">
+        <div class="secondsection-div" style="margin-left: 90px; margin-right: 90px;">
+            <h2><u style="text-decoration: underline; text-decoration-color: #f78e0e;">Sobre o Projeto</u></h2>
+            <div style="margin-bottom: 20px;"></div>
+            <p style="text-align: justify;">Uma das coisas mais valiosas que uma pessoa pode ter na vida é um animal
+                de estimação.
+                Seja ele um cachorro, um gato, um papagaio ou até mesmo um porquinho-da-índia; todos eles têm o seu
+                valor a quem os possui.
+                E, para quem tem um, com certeza em algum momento da vida se deparou com uma situação inusitada.
+                Estamos na cozinha preparando uma refeição, e todos os ingredientes estão separados para iniciar os
+                trabalhos.
+                Até que ouvimos um som familiar: as patas do nosso animal de estimação batendo pelos pisos da casa,
+                vindo em nossa direção;
+                e o mais engraçado é que já sabemos o que eles querem: comer o que estamos cozinhando, independente
+                do que seja.
+                Desde frutas, legumes e verduras, até mesmo aqueles pratos instantâneos que é só deixar 3 minutos no
+                micro-ondas e está pronto;
+                ele sempre está ao nosso lado com os olhos extremamente abertos, pedindo um pedaço.
+                Nesse momento, uma pergunta pode passar na sua cabeça: será que ele pode comer isso?
+                Sabendo dessa necessidade de unificar essas informações em uma plataforma onde as pessoas possam
+                confiar na informação apresentada,
+                especificamente nesse nicho pet, que este projeto foi desenvolvido:
+                uma plataforma onde as pessoas possam confirmar se seu animal de estimação pode comer determinado
+                alimento.
+                Um lugar onde a pessoa sabe que a informação é confiável e que vai estar disponível a qualquer
+                momento,
+                em qualquer lugar; onde precisar. Lugar esse que os desenvolvedores deste projeto batizaram
+                carinhosamente de “Petisco”.
+                este projeto é um trabalho desenvolvido para a disciplina de Desenvolvimento de Sistemas orientados a
+                dispositivos móveis e baseados na web, do Centro Universitário Senac.</p>
+        </div>
+    </div>
+ 
 
     <!-- Rodapé da página -->
     <div class="footer">
         <p>Projeto Integrador Grupo 13</p>
     </div>
 
-     <!-- JavaScript para alternar o plano de fundo e texto da terceira seção -->
+    <!-- JavaScript para alternar o plano de fundo e texto da terceira seção -->
     <script>
         const thirdSectionLeftDiv = document.getElementById("imageContainer");
         const textContainer = document.querySelector(".thirdsection-rightdiv");
@@ -170,5 +229,7 @@
         // Altera o plano de fundo e o texto a cada 5 segundos (5000 ms)
         setInterval(changeBackgroundAndText, 5000);
     </script>
+
 </body>
+
 </html>

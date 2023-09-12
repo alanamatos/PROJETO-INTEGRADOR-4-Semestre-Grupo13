@@ -1,4 +1,9 @@
-@media screen and (max-width:750px) {
+@media screen and (max-width:750px) {#quadradoExterno {
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 20%; /* Reduzir a largura do quadrado externo */
+}
 
     /* ==== Primeira seção ==== */
     .firstsection {
@@ -10,6 +15,13 @@
         width: 100%; /* Ocupa toda a largura da primeira seção */
         height: 50%;
     }
+
+    #quadradoExterno {
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 45%; /* Reduzir a largura do quadrado externo */
+      }
 
     .firstsection-rightdiv {
         background: #180c20;
@@ -70,3 +82,7 @@
         margin: 15px 0;
     }
 }
+
+
+
+

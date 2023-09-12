@@ -14,14 +14,14 @@ var logoImages = [
 
 // Array com os nomes das imagens de cabeçalho
 var headerImages = [
-    "./img1.png",
-    "./img2.png",
-    "./img3.png",
-    "./img4.png",
-    "./img5.png",
-    "./img6.png",
-    "./img7.png",
-    "./img8.png"
+    "./images/img1.png",
+    "./images/img2.png",
+    "./images/img3.png",
+    "./images/img4.png",
+    "./images/img5.png",
+    "./images/img6.png",
+    "./images/img7.png",
+    "./images/img8.png"
   ];
 
 // Função para atualizar o logotipo de forma aleatória
@@ -37,3 +37,7 @@ function updateRandomLogo() {
 window.onload = function () {
     updateRandomLogo();
 };
+
+
+
+
