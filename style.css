@@ -226,7 +226,7 @@ a {
   display: flex;
   top: 30%;
   position: fixed;
-  background-color: #f0f0f0;
+  background-color: #D7D7DF;
   padding: 10px; /* Reduzir o padding */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   text-align: center;
@@ -243,6 +243,12 @@ a {
 }
 
 .botaoVoltar {
+  background-color: #f78e0e; /* Definir a cor de fundo como amarelo */
+  color: black; /* Definir a cor do texto como preto para melhor legibilidade */
+  padding: 7px 10px; /* Ajustar o padding conforme necessário */
+  border: none; /* Remover a borda */
+  border-radius: 5px; /* Adicionar bordas arredondadas */
+  cursor: pointer; /* Mudar o cursor ao passar por cima */
   display: block;
   margin-bottom: 10px;
 }
