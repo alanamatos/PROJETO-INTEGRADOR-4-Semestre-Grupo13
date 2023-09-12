@@ -32,7 +32,7 @@ body {
   padding: 20px;
   background: #f78e0e;
   background-size: 80%;
-  background-image: url("./images/img.png");
+  background-image: url("assets/images/cabecalho/img.png");
   background-repeat: no-repeat; /* Evita a repetição da imagem */
   width: 50%;
   height: 100%;
