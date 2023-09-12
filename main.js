@@ -99,3 +99,26 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+// Função para rolar para o topo da página
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' }); // Rolagem suave para o topo
+}
+
+// Função para verificar a posição da janela e mostrar/ocultar o botão
+function checkScrollPosition() {
+    const scrollToTopButton = document.getElementById('scrollToTopButton');
+    
+    if (window.scrollY > 100) { // Defina a altura a partir da qual o botão deve aparecer
+        scrollToTopButton.style.display = 'block';
+    } else {
+        scrollToTopButton.style.display = 'none';
+    }
+}
+
+// Adicione um ouvinte de evento de rolagem para verificar a posição da janela continuamente
+window.addEventListener('scroll', checkScrollPosition);
+
+// Verifique a posição da janela assim que a página for carregada
+window.addEventListener('load', checkScrollPosition);
+
+
