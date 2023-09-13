@@ -231,6 +231,9 @@ a {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   text-align: center;
   border-radius: 10px; /* Adicionar bordas arredondadas */
+  width: 30%;
+  height: 60%;
+  text-align: center;
 }
 
 
@@ -240,6 +243,7 @@ a {
   right: 0;
   margin: auto;
   width: 20%; /* Reduzir a largura do quadrado externo */
+  height: 40%;
 }
 
 .botaoVoltar {
@@ -271,22 +275,38 @@ a {
   border-radius: 10px; /* Adicionar bordas arredondadas aos botões internos */
   width: 50px; /* Definir a largura dos botões internos */
   height: 50px; /* Definir a altura dos botões internos */
+  
 }
 
 
 
 .conteudoInterno {
-  margin: 5px;
-  padding: 5px;
+  margin: 20px;
+  
   font-size: 14px;
   background-color: #465486;
-  color: white;
+  color: black;
   border: none;
   border-radius: 100px; /* Adicionar bordas arredondadas aos botões internos */
   width: 70px; /* Definir a largura dos botões internos */
   height: 70px; /* Definir a altura dos botões internos */
-  text-align: center;
+
+  background-image: url("assets/images/botoes/botton1.png");
+  background-size: 90%;
+  background-repeat: no-repeat; /* Evita a repetição da imagem */
+  
+ 
 }
+
+
+.textoExterno {
+  margin-top: 20px; /* Adicione margem no topo para separar o texto do conteúdo interno */
+  font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+  color: black;
+  text-align: start;
+  padding-right: 250px;
+}
+
 
 #botaoAbrir {
   background-color: #f78e0e; /* Definir a cor de fundo como amarelo */

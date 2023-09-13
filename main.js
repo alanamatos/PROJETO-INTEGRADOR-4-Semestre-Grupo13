@@ -122,3 +122,37 @@ window.addEventListener('scroll', checkScrollPosition);
 window.addEventListener('load', checkScrollPosition);
 
 
+
+document.addEventListener("DOMContentLoaded", function() {
+    const botoesInternos = document.querySelectorAll('.botaoInterno');
+    const conteudoInterno = document.querySelector('.conteudoInterno');
+
+    // Função para atualizar o fundo do elemento .conteudoInterno com base no botão clicado
+    function atualizarFundo(botao) {
+        const imagemFundo = botao.querySelector('img').getAttribute('src');
+        conteudoInterno.style.backgroundImage = `url("${imagemFundo}")`;
+    }
+
+    // Adicione um evento de clique a cada botão interno
+    botoesInternos.forEach(botao => {
+        botao.addEventListener('click', () => {
+            atualizarFundo(botao);
+        });
+    });
+});
+
+
+// Seleciona o botão com id "botao1"
+var botao1 = document.getElementById("botao1");
+
+// Seleciona a div onde o texto será exibido
+var textoDinamico = document.getElementById("textoDinamico");
+
+// Adiciona um evento de clique ao botão
+botao1.addEventListener("click", function () {
+    // Define o texto que deseja exibir quando o botão for pressionado
+    var novoTexto = "Texto para o botão 1. Este é um exemplo.";
+    
+    // Atualiza o conteúdo da div com o novo texto
+    textoDinamico.textContent = novoTexto;
+});
