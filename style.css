@@ -212,12 +212,6 @@ a {
 }
 
 
-
-
-
-
-
-
 .container {
   text-align: center;
 }
@@ -239,11 +233,13 @@ a {
 
 
 #quadradoExterno {
+  padding-left: 25px;
+  padding-top: 30px;
   left: 0;
   right: 0;
   margin: auto;
-  width: 20%; /* Reduzir a largura do quadrado externo */
-  height: 40%;
+  width: 300px; /* Reduzir a largura do quadrado externo */
+  height: 300px;
 }
 
 .botaoVoltar {
@@ -340,3 +336,26 @@ a {
   background-color: #f78e0e;
 }
 
+
+
+
+/* Estilo para a classe .secondsection-div */
+.secondsection-div {
+  margin-left: 90px;
+  margin-right: 90px;
+}
+
+/* Estilo para a classe .margin-bottom */
+.margin-bottom {
+  margin-bottom: 20px;
+}
+
+/* Outros estilos que você pode querer aplicar */
+h2 u {
+  text-decoration: underline;
+  text-decoration-color: #f78e0e;
+}
+
+p {
+  text-align: justify;
+}
