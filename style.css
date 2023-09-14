@@ -225,8 +225,8 @@ a {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   text-align: center;
   border-radius: 10px; /* Adicionar bordas arredondadas */
-  width: 30%;
-  height: 60%;
+  width: 460px;
+  height: 460px;
   text-align: center;
 }
 
@@ -297,7 +297,7 @@ a {
 
 .textoExterno {
   margin-top: 20px; /* Adicione margem no topo para separar o texto do conteúdo interno */
-  font-size: 14%; /* Ajuste o tamanho da fonte conforme necessário */
+  font-size: 14px; /* Ajuste o tamanho da fonte conforme necessário */
   color: black;
   text-align: start;
   padding-right: 250px;
