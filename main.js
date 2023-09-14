@@ -39,6 +39,47 @@ window.onload = function () {
 };
 
 document.addEventListener("DOMContentLoaded", function() {
+
+
+
+
+
+const botoesInternos = document.querySelectorAll('.botaoInterno');
+    const conteudoInterno = document.querySelector('.conteudoInterno');
+
+    // Função para atualizar o fundo do elemento .conteudoInterno com base no botão clicado
+    function atualizarFundo(botao) {
+       
+    }
+
+    // Adicione um evento de clique a cada botão interno
+    botoesInternos.forEach(botao => {
+        botao.addEventListener('click', () => {
+            atualizarFundo(botao);
+            
+            // Verifique se o botão clicado está entre 2 e 9 (inclusive)
+            const botaoId = parseInt(botao.id.replace('botao', ''), 10);
+            if (botaoId >= 2 && botaoId <= 9) {
+                // Oculte os botões de alimentos definindo a propriedade de exibição para 'none'
+                const botoesAlimentos = document.querySelectorAll('.alimento');
+                botoesAlimentos.forEach(botaoAlimento => {
+                    botaoAlimento.style.display = 'none';
+                });
+            } else {
+                // Caso contrário, mostre os botões de alimentos definindo a propriedade de exibição para 'block'
+                const botoesAlimentos = document.querySelectorAll('.alimento');
+                botoesAlimentos.forEach(botaoAlimento => {
+                    botaoAlimento.style.display = 'block';
+                });
+            }
+        });
+    });
+
+
+
+
+
+
     const thirdSectionLeftDiv = document.getElementById("imageContainer");
     const textContainer = document.querySelector(".thirdsection-rightdiv");
     const images = ["image1.jpeg", "image2.jpeg", "image3.jpeg"];
@@ -57,6 +98,21 @@ document.addEventListener("DOMContentLoaded", function() {
         textContainer.innerHTML = `<p>${currentText}</p>`;
     }
 
+    document.addEventListener("DOMContentLoaded", function () {
+        const botoesVermelhos = document.querySelectorAll('.botao-vermelho');
+    
+        botoesVermelhos.forEach(botao => {
+            botao.addEventListener('click', () => {
+                // Remova a classe 'clicked' de todos os botões vermelhos
+                botoesVermelhos.forEach(b => b.classList.remove('clicked'));
+    
+                // Adicione a classe 'clicked' apenas ao botão clicado
+                botao.classList.add('clicked');
+            });
+        });
+    });
+    
+
     // Altera o plano de fundo e o texto a cada 5 segundos (5000 ms)
     setInterval(changeBackgroundAndText, 5000);
 
@@ -65,7 +121,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const botaoVoltarInterno = document.getElementById('botaoVoltarInterno');
     const quadradoExterno = document.getElementById('quadradoExterno');
     const quadradoInterno = document.getElementById('quadradoInterno');
-    const botoesInternos = document.querySelectorAll('.botaoInterno');
+    
     const textoInternos = document.querySelectorAll('.textoInterno');
 
     botaoAbrir.addEventListener('click', () => {
@@ -156,3 +212,5 @@ botao1.addEventListener("click", function () {
     // Atualiza o conteúdo da div com o novo texto
     textoDinamico.textContent = novoTexto;
 });
+
+
