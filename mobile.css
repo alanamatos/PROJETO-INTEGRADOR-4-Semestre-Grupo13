@@ -14,7 +14,7 @@
     color: #fff;
     border: none;
     border-radius: 50%;
-    padding: 15px 20px;
+    padding: 13px 20px;
     font-size: 18px;
     cursor: pointer;
     z-index: 1000; /* Certifique-se de que o botão está em cima de outros elementos */
@@ -67,9 +67,7 @@
         font-size: 20px;
     }
 
-    p {
-        font-size: 16px;
-    }
+    
 
     .link-holder {
         flex-direction: row;
@@ -142,8 +140,8 @@
   box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.5);
   text-align: center;
   border-radius: 10px; /* Adicionar bordas arredondadas */
-  width: 90%;
-  height: 60%;
+  width: 380px;
+  height: 450px;
   text-align: center;
 }
 
@@ -155,6 +153,15 @@
     margin: auto;
     width: 260px; /* Reduzir a largura do quadrado externo */
     height: 300px;
+  }
+
+  .textoExterno {
+    margin-top: 30px; /* Adicione margem no topo para separar o texto do conteúdo interno */
+    font-size: 12px; /* Ajuste o tamanho da fonte conforme necessário */
+    color: black;
+    padding-right: 225px;
+    text-align: center;
+  
   }
 
 }
