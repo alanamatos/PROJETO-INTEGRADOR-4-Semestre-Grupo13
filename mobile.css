@@ -34,6 +34,23 @@
     border-radius: 10px; /* Cantos arredondados */
     padding: 150px;
   }
+  .conteudoInterno {
+    margin-left: 30px;
+    
+    font-size: 14px;
+    background-color: #465486;
+    color: black;
+    border: none;
+    border-radius: 100px; /* Adicionar bordas arredondadas aos botões internos */
+    width: 65px; /* Definir a largura dos botões internos */
+    height: 65px; /* Definir a altura dos botões internos */
+  
+    background-image: url("assets/images/botoes/botton1.png");
+    background-size: 90%;
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    
+   
+  }
 
     /* ==== Primeira seção ==== */
     .firstsection {
@@ -133,7 +150,7 @@
 
 .quadrado {
   display: flex;
-  top: 30%;
+  top: 15%;
   position: fixed;
   background-color: #D7D7DF;
   padding: 10px; /* Reduzir o padding */
@@ -156,7 +173,7 @@
   }
 
   .textoExterno {
-    margin-top: 30px; /* Adicione margem no topo para separar o texto do conteúdo interno */
+    margin-top: 20px; /* Adicione margem no topo para separar o texto do conteúdo interno */
     font-size: 85%; /* Ajuste o tamanho da fonte conforme necessário */
     color: black;
     padding-right: 65%;
