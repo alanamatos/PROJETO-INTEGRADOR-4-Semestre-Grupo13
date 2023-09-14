@@ -140,7 +140,7 @@
   box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.5);
   text-align: center;
   border-radius: 10px; /* Adicionar bordas arredondadas */
-  width: 380px;
+  width: 80%;
   height: 450px;
   text-align: center;
 }
